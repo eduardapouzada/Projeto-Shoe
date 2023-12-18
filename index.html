@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./_css/styles.css">
+   <link rel="stylesheet" href="_css/carrinho.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <link rel="shortcut icon" href="./_imagens/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <title>SHOE SPACE</title>
+</head>
+<body>
+<div id="interface">
+    
+<!--! Header -->
+<div id="topo-header">
+    <div id="buscar">
+        <button type="submit" id="pesquisa"></button>
+        <input type="text" name="q" placeholder="Search" id="search">
+    </div>
+
+    <h2>Shoe <img src="./_imagens/logo2.png" id="logo"> Space</h2>
+
+    <div id="lateral">
+        
+    <img src="./_imagens/carrinho.png" alt="Carrinho de Compras" id="abrir-carrinho">
+          
+    <img src="./_imagens/logo-facebook.png" alt="fabebook" id="clip1">
+
+    <img src="./_imagens/logo-instagram.png" alt="instagram" id="clip2">
+
+    <img src="./_imagens/logo-ligação.png" alt="ligação" id="clip3">
+
+    </div>
+
+<!-- !Div do carrinho que inicialmente está escondida -->
+    <div id="conteudo-carrinho">
+        <!-- Conteúdo do carrinho de compras -->
+        <h2> Carrinho de Compras</h2>
+    
+        <input type="button" id="abrir-opcoes" value="Finalizar Compra">
+        <input type="button" id="fechar-carrinho" value="X">
+        <div id="carrinho">
+            <p id="p-carrinho-vazio">Seu carrinho de compras está vazio no momento :(</p> 
+            <div id="produtos-adicionados"></div>
+        </div>
+        
+    </div>
+</div>
+
+<header id="header">
+    <ul>
+        <li class="header-marcas">Converse</li>
+        <li class="header-marcas">Vans</li>
+        <li class="header-marcas">Nike</li>
+        <li class="header-marcas">Adidas</li>
+        <li class="header-marcas">Fila</li>
+        <li class="header-marcas">Puma</li>
+        <li class="header-marcas">Adidas</li>  
+        <li class="header-marcas">Olympikus</li>
+        <li class="header-marcas">Mizuno</li>   
+    </ul>
+
+    <div id="conteudo-opcoes">
+        <input type="button" id="fechar-opcoes" value="X">
+        <div class="escolha-pagamento">
+                <ul class="abas">
+                    <li>
+                        <div class="aba" id="aba1"><span>Cartão</span></div>  
+                    </li>
+                    <li>
+                        <div class="aba" id="aba2"><span>PIX</span></div> 
+                    </li>
+                </ul>
+        </div>
+        <div id="conteudo">
+            <!-- ! DIV DO CARTAO -->
+                <div id="cartao" class="cartao">
+                <form>
+                        <!-- !NOME -->
+                        <label for="nome">Nome do titular:</label><br> 
+                        <input type="text" name="nome"><br>
+                        <!-- !NUMERO -->
+                        <label for="numero">Número do cartão: </label> <br> 
+                        <div class="duas-colunas">
+                            <input type="text"  class="campo1" name="numero" id="numero" >
+                            <img src="./_imagens/cartao.png" id="imagemCartao"  class="campo2" alt="Imagem do Cartão">
+                            <img src="./_imagens/cartao2.png" id="imagemCartao2"  class="campo2" alt="Imagem do Cartão">
+                        </div> <br> 
+                        <!-- !VALIDADE -->
+                        <label for="validade">Validade do cartão: </label><br><input type="text" id="validade" name="validade" > <br>
+                        <!-- !CODIGO -->
+                        <label for="codigo">CVV: </label><br><input type="text" id="codigo" name="codigo" ><br>
+                        <!-- !PARCELAMENTO -->
+                        <div class="duas-colunas">
+                            <label for="parcelas" class="parcelas">Parcelamento: </label> <select id="parcelas" name="parcelas"></select>
+                        </div>
+                        <!-- !BOTAO -->
+                        <input type="button" id="concluir" value="Concluir Compra">
+                        <div id="concluido" class="concluido"></div>
+                </form>
+                </div>
+
+            <!-- ! DIV DO PIX -->
+                <div id="pix" class="pix">
+                    <form>
+                        <!-- !COMPRADOR -->
+                        <label for="comprador">Nome:</label><br><input type="text" name="comprador"><br>
+                        <!-- !CPF -->
+                        <label for="cpf">CPF:</label><br><input type="text" id="cpf" name="cpf"><br>
+                        <!-- !BOTAO -->
+                        <input type="button" id="concluir-pix" value="Concluir Compra">
+                        <!-- !P CONCLUIDO -->
+                        <div id="concluido-pix" class="concluido-pix"></div>
+                    </form>    
+                </div>
+                
+        </div>
+    </div>
+</header>
+
+
+<!--! CONTAINER PRINCIPAL DO SITE -->
+<main id="container-main">
+    <!-- !CARROSSEL -->
+    <section class="galery">
+        <div class="fotos">
+            <img src="./_imagens/banner1.png" alt="Foto 1">
+            <img src="./_imagens/banner2.png" alt="Foto 2"> 
+            <img src="./_imagens/banner3.png" alt="Foto 3">
+            <img src="./_imagens/banner4.png" alt="Foto 4">
+            <img src="./_imagens/banner1.png" alt="Foto 1">
+        </div>
+    </section>
+
+<section id="cards-section">
+                                        <!-- !PRODUTO 1 -->
+    <div class="card">
+        <img class="produtos-colunas-img" src="./_imagens/allstar_verde.webp">
+        <h3 class="produtos-titulos" id="nome1">Tênis Converse Cano Alto Chuck Taylor Verde</h3>
+         <p class="preço-riscado">R$ 319,99</p>
+        <h2 class="produto-preços" id="produto1">R$ 269,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+    </div>
+
+                                        <!-- !PRODUTO 2 -->
+    <div class="card">
+        <img class="produtos-colunas-img" src=".//_imagens/nike_preto.jpg">
+        <h3 class="produtos-titulos" id="nome2">Tênis Nike Air Force 1´07 High Masculino  </h3>
+         <p class="preço-riscado">R$ 799,90</p>
+        <h2 class="produto-preços" id="produto2">R$ 759,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+    </div>
+
+    
+                                        <!-- !PRODUTO 3 -->
+    <div class="card">
+        
+        <img class="produtos-colunas-img" src=".//_imagens/allstar_amarelo.webp">
+        <h3 class="produtos-titulos" id="nome3">Tênis Converse All Star Chuck 70 Amarelo </h3>
+         <p class="preço-riscado">R$ 299,99</p>
+        <h2 class="produto-preços" id="produto3">R$ 269,90</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+        
+    </div>
+
+                                            <!-- !PRODUTO 4 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src=".//_imagens/adidas_branco.webp">
+        <h3 class="produtos-titulos">Tênis Adidas Branco Breaknet Masculino </h3>
+         <p class="preço-riscado">R$ 379,99</p>
+        <h2 class="produto-preços" id="produto4">R$ 299,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+
+                                        <!-- !PRODUTO 5 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src=".//_imagens/allstar_rosa.webp">
+        <h3 class="produtos-titulos">Tênis Converse Cano Alto Chuck Taylor Rosa</h3>
+         <p class="preço-riscado">R$ 499,99</p>
+        <h2 class="produto-preços" id="produto5">R$ 449,90</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+    
+                                        <!-- !PRODUTO 6 -->
+    <div class="card">
+        
+        <img class="produtos-colunas-img" src=".//_imagens/nike_branco_colorido.jpg">
+        <h3 class="produtos-titulos">Tênis Nike Branco Gamma Force Feminino</h3>
+         <p class="preço-riscado">R$ 699,99</p>
+        <h2 class="produto-preços " id="produto6">R$ 619,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+        
+    </div>
+
+                                        <!-- !PRODUTO 7 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/allstar_preto_vermelho_masc.webp">
+        <h3 class="produtos-titulos">Chuck Taylor All Star Malden Street Retro Sport Block Preto </h3>
+         <p class="preço-riscado">R$ 320,99</p>
+        <h2 class="produto-preços" id="produto7">R$ 299,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+
+                                        <!-- !PRODUTO 8 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/nike_bordo_masc.jpg">
+        <h3 class="produtos-titulos">Tênis Nike Court Vision Mid Winter Masculino</h3>
+         <p class="preço-riscado">R$ 649,99</p>
+        <h2 class="produto-preços" id="produto8">R$ 599,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+    
+                                        <!-- !PRODUTO 9 -->    
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/vans_branco_plataforma.webp">
+        <h3 class="produtos-titulos">Tênis Vans Sk8 Hi MTE-1 Marshmallow <h3>
+         <p class="preço-riscado">R$ 720,99</p>
+        <h2 class="produto-preços" id="produto9">R$ 659,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+        
+    </div>
+
+                                        <!-- !PRODUTO 10 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/puma_branco_colorido.jpg">
+        <h3 class="produtos-titulos">TÊNIS MAYZE PUMA X THE SMURFS FEMININO</h3>
+         <p class="preço-riscado">R$ 799,99</p>
+        <h2 class="produto-preços" id="produto10">R$ 742,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+
+                                        <!-- !PRODUTO 11 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/vans_preto_colorido.webp"> 
+        <h3 class="produtos-titulos">Tênis Vans Old Skool Rainbow Leopard Multi COLOR</h3>
+         <p class="preço-riscado">R$ 399,99</p>
+        <h2 class="produto-preços" id="produto11">R$ 369,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+    
+                                        <!-- !PRODUTO 12 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/vans_preto.webp">
+        <h3 class="produtos-titulos">Tênis Vans Preto Sk8 Hi MTE-1 Blk/True WHT </h3> 
+         <p class="preço-riscado">R$ 759,99</p>
+        <h2 class="produto-preços" id="produto12">R$ 690,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+        
+    </div>
+
+                                        <!-- !PRODUTO 13 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/puma_branco_azul.jpg">
+        <h3 class="produtos-titulos">Tênis Puma Branco PREVAIL masculino</h3>
+         <p class="preço-riscado">R$ 849,99</p>
+        <h2 class="produto-preços" id="produto13">R$ 799,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+        
+    </div>
+
+                                        <!-- !PRODUTO 14 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/nike_branco_azul.jpg">
+        <h3 class="produtos-titulos">Tênis Nike Branco Gamma Force Feminino</h3>
+         <p class="preço-riscado">R$ 320,99</p>
+        <h2 class="produto-preços" id="produto14">R$ 299,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+
+                                        <!-- !PRODUTO 15 -->
+    <div class="card">
+        
+        <img class="produtos-colunas-img" src="./_imagens/allstar_amarelo_2.webp">
+        <h3 class="produtos-titulos" id="produto15">Tênis Converse Chuck 70 AT-CX Nature Dye Amarelo</h3>
+         <p class="preço-riscado">R$ 429,99</p>
+        <h2 class="produto-preços" id="produto15">R$ 499,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+
+                                        <!-- !PRODUTO 16 -->
+    <div class="card">
+
+        <img class="produtos-colunas-img" src="./_imagens/allstar_preto-masc.webp">
+        <h3 class="produtos-titulos">Tênis Converse Chuck Taylor All Star Branco</h3>
+         <p class="preço-riscado">R$ 320,99</p>
+        <h2 class="produto-preços" id="produto16">R$ 299,99</h2>
+        <button class="adicionar-carrinho">Adicionar ao carrinho</button>
+
+    </div>
+
+</section>
+</main>    
+
+<!--!  RODAPE DO SITE-->
+<footer id="rodape">
+
+    <div class="rodape-linha-1">
+        <p>&copy; 2023 - Todos os direitos reservados </p><hr>
+    </div>    
+    
+    <div class="rodape-linha-2">
+        <ul>
+            <li class="rodape-ul"><a href="#">Configuração de Cookies</a></li>
+            <li class="rodape-ul"><a href="#">Requisições de dados pessoais</a></li>
+            <li class="rodape-ul"><a href="#">Termos e Condições de Navegação</a></li>
+            <li class="rodape-ul"><a href="#">Termos e condição</a></li>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li class="rodape-ul"><a href="#"> Eduarda da Silva Pouzada</a></li>
+            
+        </ul>    
+    </div>
+</footer>
+
+</div>
+</body>
+</html>

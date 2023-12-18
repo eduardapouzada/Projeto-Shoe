@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'titulos';
+    src: url(../_fonts/avengeance/AVENGEANCE\ HEROIC\ AVENGER.ttf);
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'subtitulos';
+    src: url(../_fonts/a_black_lives/aBlackLives.otf);
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'subtitulos-2';
+    src: url(../_fonts/louis_george_cafe/Louis\ George\ Cafe.ttf);
+    font-weight: normal; font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Altere o valor conforme necessário */
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: black; /* Cor do tracinho */
+    border-radius: 5px; /* Borda arredondada do tracinho */
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor ao passar o mouse */
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor da barra de rolagem em si */
+    border-radius: 5px; /* Borda arredondada da barra de rolagem em si */
+}
+  
+::-webkit-scrollbar-button {
+    display: none; /* Esconder os botões de seta */
+}
+  
+
+/*!INTERFACE*/
+#interface,body, html{
+    margin: 0px; 
+    width: 100%;
+    background-color: white; 
+}
+
+/*! TOPO DA HEADER */
+#topo-header{
+    background-color: black; color: white;
+    position: fixed;
+    width: 100%; max-width: 100vw; height:80px;
+    margin: 0 auto;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+} 
+
+#topo-header img#logo{
+    width: 50px; height: 50px;
+}
+
+/*! CAIXA DE PESQUISA DO MENU*/
+#buscar{
+    margin: 20px 10px;
+    grid-column: 1;
+    width: 220px; height: 30px;
+}
+
+#buscar input{
+    background-color: black;
+}
+
+#buscar input:focus{
+    color: #fff;
+}
+#search {
+    width: 130px; height: 18px;
+    padding-left: 15px;
+    border-radius: 6px; 
+    border: 0.5px solid white;
+}
+
+/*! BOTÃO DE PESQUISA DO MENU */
+button#pesquisa { 
+    border: none;
+    background-image: url(../_imagens/pesquisa.png); background-repeat: no-repeat;
+    width: 20px; height: 20px; background-color: black;
+    cursor: pointer; 
+}
+
+/*! TITULO, NOME DO SITE*/
+#topo-header h2{
+    margin: 10px auto 0px auto;
+    color: #fff;
+    font-size: 28pt;
+    font-weight: 700;
+    font-family: titulos;
+    letter-spacing: 5px;
+}
+
+#topo-header img#logo{
+    width: 40px;  height: 40px;
+}
+
+#topo-header #lateral{
+    width: 100%; height: auto;
+    grid-column: 3;
+
+}
+
+/*! CARRINHO */
+#abrir-carrinho{
+    width: 50px; height: 50px;
+    margin: 15px auto 0px 100px;
+    cursor: pointer;
+    grid-column: 3;
+}
+
+#clip1{
+    margin: 0px 10px 15px 35px;
+    cursor: pointer;
+}
+
+#clip2{
+    margin: 0px 10px 15px 20px;
+    background-color: aliceblue;
+    cursor: pointer;
+
+}
+
+#clip3{
+    margin: 0px 10px 15px 20px;
+    cursor: pointer;
+}
+
+/*! HEADER */
+#header{ 
+    width: 100%; max-width: 100vw; height: 40px;
+    margin: 80px auto 0px auto; 
+    background-color: var(--fundo-claro);
+}
+
+/*! LISTA DO MENU*/
+#header ul{ 
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*! LISTA DO MENU LI*/
+#header li { 
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    font-size: 12pt;
+    font-family: subtitulos2;
+    padding: 10px 80px 0px 10px;
+    text-transform: capitalize; 
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/*! LISTA DO MENU*/
+#header li:hover {
+    text-decoration: underline var(--cor-fraca);
+    cursor: pointer;
+}
+
+
+/*! MAIN  */
+#container-main{
+    width: 100%; max-width: 100vw; height: 3150px; 
+}
+
+/*! slides*/
+/*! ANIMAÇÃO */
+
+
+.galery {
+    width: 100%; max-width: 100vw; height: 400px;
+    overflow: hidden;
+    margin: 2px 0px 10px 0px;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 19.9%;
+}
+
+
+@keyframes animacao {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+    100% { margin-left: -400%; }
+} 
+
+
+/*! CARDS DA SEÇÃO DE TODOS OS TENIS*/
+#cards-section{ 
+    width: 98%; max-width: 100vw; height: 500px;
+    margin: 0 auto; display: grid; /*? DISPLAY GRID PARA SEPARAR POR COLUNAS */
+    grid-template-columns: repeat(4, 1fr); /*? DEFINE QUANTAS COLUNAS TERA E QUANTO DE ESPAÇO OCUPARA*/
+    column-gap: 0px; /*? DEFINE OS ESPAÇOS ENTRE AS COLUNAS*/
+    margin-top: 20px;
+}
+
+/*! CARD DE CADA 'COLUNA' DE TENIS */
+.card{
+    background-color: #ffffff;
+    width: 80%; max-width: 100vw; height: auto;
+    margin: 30px 0px 45px 40px; padding: 5px 5px 10px 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 5px rgb(242, 242, 242);
+}
+
+/*! IMAGEM DOS PRODUTOS*/
+.produtos-colunas-img{
+    width: 290px; height: 270px;
+    max-width: 100%;
+    padding-left: 3px;
+    height: 290px; width: 290px;
+    border-radius: 10px;
+    
+}
+
+/*! TITULOS DOS PRODUTOS */
+.produtos-titulos{
+    font-size: 15pt;    
+    color: black;
+    font-weight: 500;
+    padding: 5px 5px 5px 5px;
+}
+
+/*! ESTRELAS DE AVALIAÇÃO */
+p{
+    margin: 0px 0px 5px 10px;
+}
+
+/*! PREÇO RISCADO DOS PRODUTOS*/
+.preço-riscado{
+    text-decoration: line-through; /*? RISCA O TEXTO*/
+    font-size: 12pt;
+    font-weight: 500;
+    color: gray;
+    margin: 0px 0px 0px 10px;
+}
+
+/*! PREÇO OFICIAL DOS PRODUTOS*/
+.produto-preços{
+    margin: 25px 0px 10px 20px;
+    font-size: 20pt;
+      
+}
+
+/*! BOTÃO PARA ADICIONAR NO CARRINHO*/
+.adicionar-carrinho{
+    margin: 25px 0px 10px 10px;
+    background-color: black; color: white;
+    border: none; 
+    border-radius: 50px; 
+    padding: 10px 25px;
+}
+
+/*! HOVER DO BOTÃO*/
+.adicionar-carrinho:hover{
+    color: #e6e6e6;
+    background-color: var(--cor-media);
+}
+
+/*! ACTIVE DO BOTAO */
+.adicionar-carrinho:active{
+    color: white; background-color: white;
+}
+
+/*! RODAPE DO SITE*/
+#rodape {
+	background-color: black;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+/*! LINHA 1 DO RODAPE*/
+.rodape-linha-1{
+    color: #b5b5b5;
+    margin: 0px 0px 18px 0px;
+}
+
+/*! P DA LINHA 1*/
+.rodape-linha-1 p {
+    padding: 2px 2px 8px 2px;
+}
+
+/*! HR DA LINHA 1 */
+.rodape-linha-1 hr{
+    border-color: #b5b5b5;
+    width: 76%;
+}
+
+/*! UL DA LINHA 2 */
+.rodape-linha-2 ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*! LI DA LINHA 2 */
+.rodape-linha-2 li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+/*!  A DA LINHA 2*/
+.rodape-linha-2 a {
+    color: #b5b5b5;
+	text-decoration: none;
+}
+
+/*! HOVER DO A DA LINHA 2*/
+.rodape-linha-2 a:hover{
+    color: #F6F6F6;
+}
