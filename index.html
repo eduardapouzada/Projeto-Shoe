@@ -2,10 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./_css/styles.css">
-   <link rel="stylesheet" href="_css/carrinho.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+   <link rel="stylesheet" href="./src/styles/carrinho.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./_js/script.js"></script>
+    <script src="./src/_js/script.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <link rel="shortcut icon" href="./_imagens/favicon_io/favicon-32x32.png" type="image/x-icon">
     <title>SHOE SPACE</title>
@@ -20,17 +20,17 @@
         <input type="text" name="q" placeholder="Search" id="search">
     </div>
 
-    <h2>Shoe <img src="./_imagens/logo2.png" id="logo"> Space</h2>
+    <h2>Shoe <img src="./src/assets/icons/logo2.png" id="logo"> Space</h2>
 
     <div id="lateral">
         
-    <img src="./_imagens/carrinho.png" alt="Carrinho de Compras" id="abrir-carrinho">
+    <img src="./src/assets/icons/carrinho.png" alt="Carrinho de Compras" id="abrir-carrinho">
           
-    <img src="./_imagens/logo-facebook.png" alt="fabebook" id="clip1">
+    <img src="./src/assets/icons/logo-facebook.png" alt="fabebook" id="clip1">
 
-    <img src="./_imagens/logo-instagram.png" alt="instagram" id="clip2">
+    <img src="./src/assets/icons/logo-instagram.png" alt="instagram" id="clip2">
 
-    <img src="./_imagens/logo-ligação.png" alt="ligação" id="clip3">
+    <img src="./src/assets/icons/logo-ligação.png" alt="ligação" id="clip3">
 
     </div>
 
@@ -85,8 +85,8 @@
                         <label for="numero">Número do cartão: </label> <br> 
                         <div class="duas-colunas">
                             <input type="text"  class="campo1" name="numero" id="numero" >
-                            <img src="./_imagens/cartao.png" id="imagemCartao"  class="campo2" alt="Imagem do Cartão">
-                            <img src="./_imagens/cartao2.png" id="imagemCartao2"  class="campo2" alt="Imagem do Cartão">
+                            <img src="./src/assets/icons/cartao.png" id="imagemCartao"  class="campo2" alt="Imagem do Cartão">
+                            <img src="./src/assets/icons/cartao2.png" id="imagemCartao2"  class="campo2" alt="Imagem do Cartão">
                         </div> <br> 
                         <!-- !VALIDADE -->
                         <label for="validade">Validade do cartão: </label><br><input type="text" id="validade" name="validade" > <br>
@@ -126,18 +126,18 @@
     <!-- !CARROSSEL -->
     <section class="galery">
         <div class="fotos">
-            <img src="./_imagens/banner1.png" alt="Foto 1">
-            <img src="./_imagens/banner2.png" alt="Foto 2"> 
-            <img src="./_imagens/banner3.png" alt="Foto 3">
-            <img src="./_imagens/banner4.png" alt="Foto 4">
-            <img src="./_imagens/banner1.png" alt="Foto 1">
+            <img src="./src/assets/banners/banner1.png" alt="Foto 1">
+            <img src="./src/assets/banners/banner2.png" alt="Foto 2"> 
+            <img src="./src/assets/banners/banner3.png" alt="Foto 3">
+            <img src="./src/assets/banners/banner4.png" alt="Foto 4">
+            <img src="./src/assets/banners/banner1.png" alt="Foto 1">
         </div>
     </section>
 
 <section id="cards-section">
                                         <!-- !PRODUTO 1 -->
     <div class="card">
-        <img class="produtos-colunas-img" src="./_imagens/allstar_verde.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/allstar_verde.webp">
         <h3 class="produtos-titulos" id="nome1">Tênis Converse Cano Alto Chuck Taylor Verde</h3>
          <p class="preço-riscado">R$ 319,99</p>
         <h2 class="produto-preços" id="produto1">R$ 269,99</h2>
@@ -146,7 +146,7 @@
 
                                         <!-- !PRODUTO 2 -->
     <div class="card">
-        <img class="produtos-colunas-img" src=".//_imagens/nike_preto.jpg">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/nike_preto.jpg">
         <h3 class="produtos-titulos" id="nome2">Tênis Nike Air Force 1´07 High Masculino  </h3>
          <p class="preço-riscado">R$ 799,90</p>
         <h2 class="produto-preços" id="produto2">R$ 759,99</h2>
@@ -157,7 +157,7 @@
                                         <!-- !PRODUTO 3 -->
     <div class="card">
         
-        <img class="produtos-colunas-img" src=".//_imagens/allstar_amarelo.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/allstar_amarelo.webp">
         <h3 class="produtos-titulos" id="nome3">Tênis Converse All Star Chuck 70 Amarelo </h3>
          <p class="preço-riscado">R$ 299,99</p>
         <h2 class="produto-preços" id="produto3">R$ 269,90</h2>
@@ -168,7 +168,7 @@
                                             <!-- !PRODUTO 4 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src=".//_imagens/adidas_branco.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/adidas_branco.webp">
         <h3 class="produtos-titulos">Tênis Adidas Branco Breaknet Masculino </h3>
          <p class="preço-riscado">R$ 379,99</p>
         <h2 class="produto-preços" id="produto4">R$ 299,99</h2>
@@ -179,7 +179,7 @@
                                         <!-- !PRODUTO 5 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src=".//_imagens/allstar_rosa.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/allstar_rosa.webp">
         <h3 class="produtos-titulos">Tênis Converse Cano Alto Chuck Taylor Rosa</h3>
          <p class="preço-riscado">R$ 499,99</p>
         <h2 class="produto-preços" id="produto5">R$ 449,90</h2>
@@ -190,7 +190,7 @@
                                         <!-- !PRODUTO 6 -->
     <div class="card">
         
-        <img class="produtos-colunas-img" src=".//_imagens/nike_branco_colorido.jpg">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/nike_branco_colorido.jpg">
         <h3 class="produtos-titulos">Tênis Nike Branco Gamma Force Feminino</h3>
          <p class="preço-riscado">R$ 699,99</p>
         <h2 class="produto-preços " id="produto6">R$ 619,99</h2>
@@ -201,7 +201,7 @@
                                         <!-- !PRODUTO 7 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/allstar_preto_vermelho_masc.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/allstar_preto_vermelho_masc.webp">
         <h3 class="produtos-titulos">Chuck Taylor All Star Malden Street Retro Sport Block Preto </h3>
          <p class="preço-riscado">R$ 320,99</p>
         <h2 class="produto-preços" id="produto7">R$ 299,99</h2>
@@ -212,7 +212,7 @@
                                         <!-- !PRODUTO 8 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/nike_bordo_masc.jpg">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/nike_bordo_masc.jpg">
         <h3 class="produtos-titulos">Tênis Nike Court Vision Mid Winter Masculino</h3>
          <p class="preço-riscado">R$ 649,99</p>
         <h2 class="produto-preços" id="produto8">R$ 599,99</h2>
@@ -223,7 +223,7 @@
                                         <!-- !PRODUTO 9 -->    
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/vans_branco_plataforma.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/vans_branco_plataforma.webp">
         <h3 class="produtos-titulos">Tênis Vans Sk8 Hi MTE-1 Marshmallow <h3>
          <p class="preço-riscado">R$ 720,99</p>
         <h2 class="produto-preços" id="produto9">R$ 659,99</h2>
@@ -234,7 +234,7 @@
                                         <!-- !PRODUTO 10 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/puma_branco_colorido.jpg">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/puma_branco_colorido.jpg">
         <h3 class="produtos-titulos">TÊNIS MAYZE PUMA X THE SMURFS FEMININO</h3>
          <p class="preço-riscado">R$ 799,99</p>
         <h2 class="produto-preços" id="produto10">R$ 742,99</h2>
@@ -245,7 +245,7 @@
                                         <!-- !PRODUTO 11 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/vans_preto_colorido.webp"> 
+        <img class="produtos-colunas-img" src="./src/assets/produtos/vans_preto_colorido.webp"> 
         <h3 class="produtos-titulos">Tênis Vans Old Skool Rainbow Leopard Multi COLOR</h3>
          <p class="preço-riscado">R$ 399,99</p>
         <h2 class="produto-preços" id="produto11">R$ 369,99</h2>
@@ -256,7 +256,7 @@
                                         <!-- !PRODUTO 12 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/vans_preto.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/vans_preto.webp">
         <h3 class="produtos-titulos">Tênis Vans Preto Sk8 Hi MTE-1 Blk/True WHT </h3> 
          <p class="preço-riscado">R$ 759,99</p>
         <h2 class="produto-preços" id="produto12">R$ 690,99</h2>
@@ -267,7 +267,7 @@
                                         <!-- !PRODUTO 13 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/puma_branco_azul.jpg">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/puma_branco_azul.jpg">
         <h3 class="produtos-titulos">Tênis Puma Branco PREVAIL masculino</h3>
          <p class="preço-riscado">R$ 849,99</p>
         <h2 class="produto-preços" id="produto13">R$ 799,99</h2>
@@ -278,7 +278,7 @@
                                         <!-- !PRODUTO 14 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/nike_branco_azul.jpg">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/nike_branco_azul.jpg">
         <h3 class="produtos-titulos">Tênis Nike Branco Gamma Force Feminino</h3>
          <p class="preço-riscado">R$ 320,99</p>
         <h2 class="produto-preços" id="produto14">R$ 299,99</h2>
@@ -289,7 +289,7 @@
                                         <!-- !PRODUTO 15 -->
     <div class="card">
         
-        <img class="produtos-colunas-img" src="./_imagens/allstar_amarelo_2.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/allstar_amarelo_2.webp">
         <h3 class="produtos-titulos" id="produto15">Tênis Converse Chuck 70 AT-CX Nature Dye Amarelo</h3>
          <p class="preço-riscado">R$ 429,99</p>
         <h2 class="produto-preços" id="produto15">R$ 499,99</h2>
@@ -300,7 +300,7 @@
                                         <!-- !PRODUTO 16 -->
     <div class="card">
 
-        <img class="produtos-colunas-img" src="./_imagens/allstar_preto-masc.webp">
+        <img class="produtos-colunas-img" src="./src/assets/produtos/allstar_preto-masc.webp">
         <h3 class="produtos-titulos">Tênis Converse Chuck Taylor All Star Branco</h3>
          <p class="preço-riscado">R$ 320,99</p>
         <h2 class="produto-preços" id="produto16">R$ 299,99</h2>
