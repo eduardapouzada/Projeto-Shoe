@@ -88,7 +88,7 @@
 /*! BOTÃO DE PESQUISA DO MENU */
 button#pesquisa { 
     border: none;
-    background-image: url(../_imagens/pesquisa.png); background-repeat: no-repeat;
+    background-image: url(../assets/icons/pesquisa.png); background-repeat: no-repeat;
     width: 20px; height: 20px; background-color: black;
     cursor: pointer; 
 }
