@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: 'titulos';
-    src: url(../_fonts/avengeance/AVENGEANCE\ HEROIC\ AVENGER.ttf);
+    src: url(../assets/fonts/avengeance/AVENGEANCE\ HEROIC\ AVENGER.ttf);
     font-weight: normal; font-style: normal;
 }
 
 @font-face {
     font-family: 'subtitulos';
-    src: url(../_fonts/a_black_lives/aBlackLives.otf);
+    src: url(../assets/fonts/a_black_lives/aBlackLives.otf);
     font-weight: normal; font-style: normal;
 }
 
 @font-face {
     font-family: 'subtitulos-2';
-    src: url(../_fonts/louis_george_cafe/Louis\ George\ Cafe.ttf);
+    src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe.ttf);
     font-weight: normal; font-style: normal;
 }
 
