@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*
 @font-face {
     font-family: 'titulos';
     src: url(../assets/fonts/avengeance/AVENGEANCE\ HEROIC\ AVENGER.ttf);
@@ -16,7 +16,7 @@
     font-family: 'subtitulos-2';
     src: url(../assets/fonts/louis_george_cafe/Louis\ George\ Cafe.ttf);
     font-weight: normal; font-style: normal;
-}
+}*/
 
 ::-webkit-scrollbar {
     width: 10px; /* Altere o valor conforme necessário */
@@ -99,7 +99,7 @@ button#pesquisa {
     color: #fff;
     font-size: 28pt;
     font-weight: 700;
-    font-family: titulos;
+   /* font-family: titulos;*/
     letter-spacing: 5px;
 }
 
@@ -157,7 +157,7 @@ button#pesquisa {
     color: black;
     font-weight: 700;
     font-size: 12pt;
-    font-family: subtitulos2;
+   /* font-family: subtitulos2;*/
     padding: 10px 80px 0px 10px;
     text-transform: capitalize; 
     text-decoration: none;
